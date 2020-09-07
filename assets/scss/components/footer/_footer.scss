@@ -1,0 +1,121 @@
+footer {
+	padding: 50px 0 110px;
+	background-color: #1f373d;
+	.title-name {
+		padding-bottom: 35px;
+        h6 {
+        text-transform: capitalize;
+        font-size: 40px;
+        max-width: 400px;
+        padding-bottom: 18px;
+		letter-spacing: -0.1rem;
+		color: $white;
+		}
+	}
+	form {
+		display: block;
+		
+	}
+}
+
+
+
+.footer-logo {
+	padding-bottom: 55px;
+	line-height: 2.0;
+}
+
+.copyright-block {
+	color: $white;
+	max-width: 130px;
+	font-size: 14px;
+}
+
+.footer-top {
+	display: flex;
+    border-bottom: 1px solid #919eb1;
+    margin: 0 -15px;
+	padding-bottom: 35px;
+	align-items: center;
+	.title-name {
+		max-width: 53%;
+		flex: 0 0 53%;
+		padding: 0 15px;
+	}
+}
+
+.footer-form-wrap {
+	max-width: 43%;
+	flex: 0 0 43%;
+	padding: 0 15px;
+}
+
+.subscribe-form {
+	width: 100%;
+	display: flex;
+	input {
+		border: none;
+    	outline: none;
+		padding: 25px;
+		width: 375px;
+	}
+	input[type="submit"]{
+		width: 100%;
+	}
+
+	button[type="submit"]{
+		flex-shrink: 0;
+		width: 100px;
+		border: none;
+		display: inline-block;
+		background-color: $white;
+		font-size: 30px;
+	}
+}
+
+
+.footer-bottom {
+	display: flex;
+	padding-top: 80px;
+	margin: 0 -15px;
+	&__left {
+		width: 32%;
+		padding: 0 15px;
+	}
+	&__right {
+		width: 68%;
+		padding: 0 15px;
+	}
+}
+
+.footer-links {
+	@extend %listreset;
+	margin: 0 -15px;
+	li {
+		line-height: 2.5;
+		padding: 0 15px;
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+	
+	&-list {
+		@extend %listreset;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		color: #919eb1;
+		font-size: 13px;
+		&__item {
+			padding: 0 15px;
+			max-width: 23%;
+			flex: 0 0 23%;
+			h3 {
+				padding-bottom: 30px;
+			}
+		}
+	}
+}
+
+

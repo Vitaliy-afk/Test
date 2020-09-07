@@ -1,0 +1,25 @@
+@import "./utils/mixins";
+@import "./utils/include-media";
+@import "./utils/variables";
+@import "./utils/common";
+@import "./utils/normalize";
+@import "./utils/breakpoints";
+@import "./utils/forms";
+@import "./utils/functions";
+@import "./utils/helpers";
+@import "./components/slider/slider-section";
+@import "./components/slider/slick";
+@import "./components/header/burger";
+@import "./components/header/header";
+@import "./components/statistics/section-statistics";
+@import "./components/collection/collection-section";
+@import "./components/counter/counter-section";
+@import "./components/hero-section/hero-section";
+@import "./components/service/service-section";
+@import "./components/catalog/catalog-section";
+@import "./components/footer/footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,600&display=swap');
+
+
+
+
