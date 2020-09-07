@@ -1,7 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 #wrapper {
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 
 .container {
@@ -31,5 +37,8 @@
     min-width: 253px;
     text-align: center;
     padding: 25px 15px;
+    :active {
+        background-color: #e7b800;
+    }
 }
 

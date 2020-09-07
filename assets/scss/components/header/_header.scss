@@ -82,6 +82,7 @@
 	display: flex;
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
+	
 	&__item:not(:last-child){
 		margin-right: 35px;
 	}
@@ -94,3 +95,8 @@
 	}
 }
 
+.header-list__item {
+	&.active a{
+		color: #ffcc01;
+	}
+}
