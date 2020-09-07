@@ -522,7 +522,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.slider-block, .slider__bottom-list, .slider-search__list, .header-list, .section-grid__right .section-grid__list, .collection-list, .collection__bottom-list, .counter-list, .hero-contact, .service-section__list, .service-section__list ul, .catalog-list, .footer-links, .footer-links-list {
+.slider-block, .slider__bottom-list, .slider-search__list, .header-list, .section-statistic__right .section-statistic__list, .collection-list, .collection__bottom-list, .counter-list, .hero-contact, .service-section__list, .service-section__list ul, .catalog-list, .footer-links, .footer-links-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1052,31 +1052,31 @@ input[type='submit'] {
   font-weight: 600;
 }
 
-.section-statistics {
+.section-statistic {
   padding: 150px 0 40px;
 }
 
-.section-grid {
+.section-statistic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 -15px;
 }
 
-.section-grid__left {
+.section-statistic__left {
   width: 60%;
   max-width: 600px;
   padding: 0 15px;
 }
 
-.section-grid__left p {
+.section-statistic__left p {
   line-height: 2.0;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: -0.02rem;
 }
 
-.section-grid .title-name h2 {
+.section-statistic .title-name h2 {
   text-transform: capitalize;
   font-size: 40px;
   max-width: 400px;
@@ -1084,12 +1084,12 @@ input[type='submit'] {
   letter-spacing: -0.1rem;
 }
 
-.section-grid__right {
+.section-statistic__right {
   padding: 0 15px;
   width: 40%;
 }
 
-.section-grid__right .section-grid__list {
+.section-statistic__right .section-statistic__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1099,7 +1099,7 @@ input[type='submit'] {
   margin: 0px 77px;
 }
 
-.section-grid__right .counter {
+.section-statistic__right .counter {
   background-color: #f6f5f4;
   padding: 37px;
   border-radius: 5px;
@@ -1109,7 +1109,7 @@ input[type='submit'] {
   width: 200px;
 }
 
-.section-grid__right .count {
+.section-statistic__right .count {
   font-size: 40px;
   color: #ffcc01;
   font-weight: 700;
@@ -1118,7 +1118,7 @@ input[type='submit'] {
   text-align: center;
 }
 
-.section-grid__right .count-text {
+.section-statistic__right .count-text {
   font-size: 13px;
   font-weight: normal;
   margin-top: 10px;
@@ -1719,7 +1719,7 @@ input[type='submit'] {
 }
 
 .catalog-section {
-  padding: 90px 0 103px;
+  padding: 90px 0 95px;
 }
 
 .catalog-section .container:nth-child(3) .catalog-block {
@@ -1939,6 +1939,8 @@ footer form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
 }
 
 .subscribe-form input {

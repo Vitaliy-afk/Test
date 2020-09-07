@@ -1,8 +1,8 @@
-.section-statistics {
+.section-statistic {
     padding: 150px 0 40px;
 }
 
-.section-grid {
+.section-statistic {
     display: flex;
     margin: 0 -15px;
     &__left {
@@ -30,10 +30,10 @@
 
 
 
-.section-grid__right {
+.section-statistic__right {
     padding: 0 15px;
     width: 40%;
-    .section-grid__list {
+    .section-statistic__list {
         @extend %listreset;
         display: flex;
         width: 100%;
