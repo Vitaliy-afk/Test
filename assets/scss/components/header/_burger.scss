@@ -3,12 +3,12 @@
 .burger-wrap {
 	visibility: hidden;
 	position: absolute;
-	top: 70%;
-	left: 0;
+	top: 8%;
+    right: 0%;
 	text-align: center;
 	width: 100%;
 	display: inline-block;
-	@include media ('<860px'){
+	@include media ('<=860px'){
         width: 100%;
         display: inline-block;
 		visibility: visible;
@@ -20,15 +20,14 @@
 
 
 .header-menu {
-	@include media ('<860px'){
+	@include media ('<=860px'){
         width: 100%;
 		visibility: hidden;
 	}
 	.burger-active & {
-		@include media('<1024px'){
+		@include media('<=860px'){
             opacity: 1;
 			visibility: visible;
-			transform: translateX(0%);
 		}
 	}
 }
