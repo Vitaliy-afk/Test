@@ -530,7 +530,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.slider-block, .slider__bottom-list, .slider-search__list, .header-list, .section-statistic__right .section-statistic__list, .collection-list, .collection__bottom-list, .counter-list, .hero-contact, .service-section__list, .service-section__list ul, .catalog-list, .footer-links, .footer-links-list {
+.slider-block, .slider__bottom-list, .slider-search__list, .header-navlist, .header-actlist, .section-statistic__right .section-statistic__list, .collection-list, .collection__bottom-list, .counter-list, .hero-contact, .service-section__list, .service-section__list ul, .catalog-list, .footer-links, .footer-links-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -891,7 +891,7 @@ input[type='submit'] {
 .burger-wrap {
   visibility: hidden;
   position: absolute;
-  top: 8%;
+  top: 40%;
   right: 0%;
   text-align: center;
   width: 100%;
@@ -999,53 +999,122 @@ input[type='submit'] {
       flex-wrap: wrap;
 }
 
-.header-navbar .logo {
-  width: 30%;
-  padding: 0 15px;
-}
-
-.header-navbar .header-menu {
-  padding: 0 15px;
-  width: 70%;
-}
-
-.header-list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 -15px;
-}
-
-.header-list__item {
-  padding: 0 15px;
-  white-space: nowrap;
-}
-
-.header-list__item.active a {
-  color: #ffcc01;
-}
-
-.header-list__item a {
+.header-navbar a {
   text-decoration: none;
   font-size: 13px;
   color: #333;
   font-weight: 600;
 }
 
-.header-list__item--button a {
-  padding: 13px 22px;
-  background-color: #ffcc01;
-  border-radius: 5%;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+.header-navbar a:hover {
+  color: #ffcc01;
 }
 
-.header-list__item--button a:hover {
+.header-navbar .logo {
+  width: 140px;
+  padding: 0 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.header-navbar .header-menu {
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(88% - 200px);
+  margin-left: 200px;
+}
+
+.header-navlist {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-navlist__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-navlist__item {
+  position: relative;
+}
+
+.header-navlist__item.active a {
+  color: #ffcc01;
+}
+
+.header-actlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin: 0 0 0 100px;
+}
+
+.header-actlist__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.header-actlist__item {
+  margin-right: 20px;
+}
+
+.header-actlist__item:nth-child(2) a {
+  background-color: #ffcc01;
+  border-radius: 5%;
+  padding: 13px 22px;
+}
+
+.header-actlist__item:nth-child(2) a:hover {
   background-color: #917e32;
 }
 
-.header-list__item:nth-child(5) {
-  margin-right: 65px;
+.header-navlist > li:hover .submenu__list {
+  display: block;
+  -webkit-transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+  -o-transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+  transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+}
+
+.submenu__list:hover {
+  -webkit-transition: 9.9s;
+  -o-transition: 9.9s;
+  transition: 9.9s;
+}
+
+.submenu__list > li {
+  background-color: #b1d7e8;
+}
+
+.submenu__list {
+  list-style-type: none;
+  left: 0;
+  top: 19px;
+  background-color: #b1d7e8;
+  position: absolute;
+  z-index: 10;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px white;
+  display: none;
+  -webkit-transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+  -o-transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+  transition: background-color 3s cubic-bezier(0.1, 0.8, 0.5, 2), color 3s 1s linear;
+}
+
+.submenu__list-item {
+  width: 100px;
+  margin: 20px;
+}
+
+.submenu__list > li {
+  background-color: #b1d7e8;
+}
+
+.submenu__list li:hover {
+  text-decoration: underline;
 }
 
 .section-statistic {
@@ -1791,6 +1860,10 @@ input[type='submit'] {
   padding: 65px 93px 0px 5px;
 }
 
+.catalog-list:nth-child(1) .catalog-block {
+  padding: 35px 93px 0px 5px;
+}
+
 .catalog-list__item {
   padding: 0 15px;
   max-width: 0 0 50%;
@@ -2031,34 +2104,22 @@ footer form {
   .burger-wrap {
     display: none;
   }
-  .header-list {
+  .header-navlist {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-@media (max-width: 1279px) {
-  .header-navbar .logo {
-    width: 20%;
-  }
-  .header-navbar .header-menu {
-    width: 80%;
+@media (max-width: 1024px) {
+  .header-actlist__item {
+    padding: 0 10px;
   }
 }
 
 @media (max-width: 1023px) {
-  .header-navbar .logo {
-    width: 22%;
-  }
-  .header-navbar .header-menu {
-    width: 78%;
-  }
-  .header-list__item {
+  .header-navlist__item {
     padding: 0 5px;
-  }
-  .header-list__item:nth-child(5) {
-    margin-right: 10px;
   }
 }
 
@@ -2076,10 +2137,7 @@ footer form {
     opacity: 1;
     visibility: visible;
   }
-  .header-navbar .logo {
-    width: 100%;
-  }
-  .header-list__item {
+  .header-navlist__item {
     padding: 20px;
   }
   .header-menu {
@@ -2087,6 +2145,14 @@ footer form {
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
     margin-top: 30px;
+    position: absolute;
+    top: 4px;
+    z-index: 100;
+    margin: 90px 0 auto;
+    left: -5px;
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
   }
   .burger-active .header-menu {
     font-size: 10px;
@@ -2095,16 +2161,15 @@ footer form {
         -ms-transform: translateX(0%);
             transform: translateX(0%);
     display: inline-block;
-    width: 100%;
-    -webkit-transition-duration: 1s;
-         -o-transition-duration: 1s;
-            transition-duration: 1s;
+    max-width: 100%;
     background-color: #b1d7e8;
   }
 }
 
 @media (max-width: 859px) {
-  .header-list__item:nth-child(5) {
+  .submenu__list {
     margin-right: 0px;
+    left: 15%;
+    padding: 0px !important;
   }
 }
